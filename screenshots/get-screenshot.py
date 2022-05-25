@@ -31,7 +31,7 @@ print (site)
 print (sitename)
 #   The Google API.  Remove "&strategy=mobile" for a desktop screenshot
 key = "YOUR KEY HERE"
-api = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?&url=" + urllib.parse.quote(site) + key
+api = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?&url=" + urllib.parse.quote(site) + "&key=" + key
 
 #   Get the results from Google
 print (api)
